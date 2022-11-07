@@ -1,0 +1,30 @@
+var nodes_map = new Map;
+var nodes_list;
+var node_n = 0;
+
+function create_node(name, pre) {
+    nodes_list += new node(name, pre);
+    nodes_map.set(node_name, node_n++);
+
+}
+
+class node {
+    contructor(name, loc, pre) {
+        this.name = name;
+        this.pre = pre;
+        this.loc = loc;
+    }
+    getName() {
+        return this.name;
+    }
+    getPre() {
+        return this.pre;
+    }
+    getloc() {
+        return this.loc;
+    }
+    move(xMove, yMove) {
+        loc[0] += xMove;
+        loc[1] += yMove;
+    }
+}
